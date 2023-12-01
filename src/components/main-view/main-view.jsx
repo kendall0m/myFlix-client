@@ -46,7 +46,7 @@ export const MainView = () => {
   }
 
   return (
-    <div>Helllo
+    <div>
       {movies.map((movie) => (
         <MovieCard key={movie.id} 
         movie={movie} 
