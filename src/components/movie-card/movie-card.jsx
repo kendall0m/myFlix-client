@@ -1,5 +1,7 @@
 //Here you import the PropTypes library
 import PropTypes from "prop-types";
+
+
 //the movieCard function component
 export const MovieCard = ({ movie, onMovieClick }) => {
     return (
