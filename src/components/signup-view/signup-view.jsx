@@ -16,7 +16,7 @@ export const SignupView = () => {
             Birthday: birthday
         };
 
-        fetch("https://kendallsmovies-85beffe7056c.herokuapp.com/", {
+        fetch("https://kendallsmovies-85beffe7056c.herokuapp.com/users", {
             method: "POST",
             body: JSON.stringify(data),
             headers: {

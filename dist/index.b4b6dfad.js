@@ -28412,7 +28412,7 @@ const LoginView = ({ onLoggedIn })=>{
             access: username,
             secret: password
         };
-        fetch("https://kendallsmovies-85beffe7056c.herokuapp.com/", {
+        fetch("https://kendallsmovies-85beffe7056c.herokuapp.com/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -28522,7 +28522,7 @@ const SignupView = ()=>{
             Email: email,
             Birthday: birthday
         };
-        fetch("https://kendallsmovies-85beffe7056c.herokuapp.com/", {
+        fetch("https://kendallsmovies-85beffe7056c.herokuapp.com/users", {
             method: "POST",
             body: JSON.stringify(data),
             headers: {
