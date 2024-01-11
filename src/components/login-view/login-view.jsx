@@ -6,6 +6,8 @@ export const LoginView = ({ onLoggedIn }) => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
+
+
     const handleSubmit = (event) => {
         // this prevents the default behavior of the form which is to reload the entire page
         event.preventDefault();
@@ -15,7 +17,7 @@ export const LoginView = ({ onLoggedIn }) => {
             Password: password
         };
 
-        fetch("https://kendallsmovies-85beffe7056c.herokuapp.com/login", {
+        fetch("https://kendallsmovies3-5d68be57384b.herokuapp.com/login", {
             method: "POST",
             headers: {
               "Content-Type": "application/json"
