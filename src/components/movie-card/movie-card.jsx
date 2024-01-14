@@ -13,7 +13,7 @@ export const MovieCard = ({ movie, user, token }) => {
 //Add favorite movie
   const addFave = (id) => {
 
-    fetch(`https://kendallsmovies3-5d68be57384b.herokuapp.com/users/${user.Username}/movies/${id}`, {
+    fetch(`https://kendallsmovies-85beffe7056c.herokuapp.com/users/${user.Username}/movies/${id}`, {
         method: "POST",
         headers: {
             Authorization: `Bearer ${token}`
@@ -38,7 +38,7 @@ export const MovieCard = ({ movie, user, token }) => {
 // Remove Favorite Movie
 const removeFave = (id) => {
 
-    fetch(`https://kendallsmovies3-5d68be57384b.herokuapp.com/users/${user.Username}/${id}`, {
+    fetch(`https://kendallsmovies-85beffe7056c.herokuapp.com/users/${user.Username}/${id}`, {
         method: "DELETE",
         headers: {
             Authorization: `Bearer ${token}`

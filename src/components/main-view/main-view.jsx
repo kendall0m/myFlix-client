@@ -24,10 +24,8 @@ export const MainView = () => {
     }
 
 
-    fetch("https://kendallsmovies3-5d68be57384b.herokuapp.com/movies", { 
-      mode: "cors",
+    fetch("https://kendallsmovies-85beffe7056c.herokuapp.com/movies", { 
       headers: { Authorization: `Bearer ${token}`,}
-
     })
       .then((response) => response.json())
       .then((data) => {

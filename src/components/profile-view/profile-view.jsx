@@ -37,7 +37,7 @@ export const ProfileView = ({user, movies, setUser, removeFave, addFave }) => {
             Password: password
         }
 
-        fetch(`https://kendallsmovies3-5d68be57384b.herokuapp.com/users/${user.Username}`, {
+        fetch(`https://kendallsmovies-85beffe7056c.herokuapp.com/users/${user.Username}`, {
             method: "PUT",
             body: JSON.stringify(data),
             headers: {
